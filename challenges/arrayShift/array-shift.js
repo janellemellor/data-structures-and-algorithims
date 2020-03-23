@@ -3,12 +3,13 @@
 function insertShiftArray(arr, val) {
   //find the middle of the array. Should account for arrays that contain an odd number of values by rounding up to nearing whole number. 
   const middleIndexPosition = Math.ceil(arr.length / 2);
+  //create a new empty array
   let shiftedArray = [];
 
-  //use a for loop to iterate through the array
-  for(let i = 0; i < arr.length; i++) {
+  //use a for loop to iterate through the array and add one to the length of the array to account for the new value being added in
+  for(let i = 0; i < arr.length + 1; i++) {
   
-    //if the index is less than the middleIndexPosition, set the index of the new array equal to the index of the old array
+    //if the index is less than the middleIndexPosition, set the value of the index of the new array equal to the value of the index of the old array
     if(i < middleIndexPosition) {
       shiftedArray[i] = arr[i];
     }

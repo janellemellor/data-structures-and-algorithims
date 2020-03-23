@@ -9,11 +9,11 @@ describe('arrayShift tests', () => {
 
 
   it('should insert 5 into the middle', () => {
-    expect((insertShiftArray(array1, val1))).toEqual([2, 4, 5, 6, 8]);
+    expect(insertShiftArray(array1, val1)).toEqual([2, 4, 5, 6, 8]);
   });
 
   it('should insert 16 into the middle', () => {
-    expect((insertShiftArray(array2, val2))).toEqual([4, 8, 15, 16, 23, 42]);
+    expect(insertShiftArray(array2, val2)).toEqual([4, 8, 15, 16, 23, 42]);
   });
 
 });
