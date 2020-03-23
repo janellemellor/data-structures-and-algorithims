@@ -8,15 +8,13 @@ const val2 = 16;
   
 
 
-
-
 describe('arrayShift tests', () => {
-  it('', () => {
-    expect().toEqual([2, 4, 5, 6, 8]);
+  it('should insert 5 into the middle', () => {
+    expect(insertShiftArray(array1, val1)).toEqual([2, 4, 5, 6, 8]);
   });
 
-  it('', () => {
-    expect().toEqual([4, 8, 15, 16, 23, 42]);
+  it('should insert 16 into the middle', () => {
+    expect(insertShiftArray(array2, val2)).toEqual([4, 8, 15, 16, 23, 42]);
   });
 
 });
