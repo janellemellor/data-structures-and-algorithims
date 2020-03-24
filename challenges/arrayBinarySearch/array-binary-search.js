@@ -5,9 +5,19 @@ function binarySearch(arr, search) {
   //iterate through the sorted array
   for(let i = 0; i < arr.length; i++) {
     //if the search key exists in the array
-    //return the index of the element
-
+    if(arr[i] === search) {
+      //return the index of the element
+      return i;
+    }
     //if the search key does not exist in the array
-    //return -1
-  }
+    else if(arr[i] !== search) {
+      //return -1
+      return -1;
+    } 
+  } 
 }
+
+module.exports = {
+  binarySearch
+};
+
